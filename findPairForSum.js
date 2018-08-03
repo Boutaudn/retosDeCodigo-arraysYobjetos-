@@ -27,15 +27,16 @@ function findPairForSum(array, number) {
 
 }*/
 
-function findPairForSum(array, number){
-for(let i = 0; i < array.length; i++){
-		for(let j = 1; j < array.length; j++){
-			if(array[i] + array[j] === number){
-				result = true;
-			}else{
-				result = false;
-			}
-		}
-	}
-	return result;
+
+
+var result = [];
+function findPairForSum(array, number){ 
+  for(let i = 0; i < array.length; i++){
+        for(let j = 1; j < array.length; j++){
+            if(array[i] + array[j] === number){
+                result.push(array[i], array[j]);
+            }
+        } 
+    }return result;
+   
 }
