@@ -7,9 +7,8 @@ console.log(output); // --> 4*/
 
 function findSmallestNumberAmongMixedElements(arr) {
 	let arrSort = arr.sort()
-		if (arrSort.length === 0 || typeof(arrSort[0]) === 'string' ){
-				return 0;
-				}
-		return arrSort[0];
-		
-	}
+	if (arrSort.length === 0 || typeof(arrSort[0]) === 'string' ){
+		return 0;
+		}
+	return arrSort[0];		
+}	
